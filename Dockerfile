@@ -28,7 +28,7 @@ WORKDIR /azvm
 
 # Install docker binary:
 ARG docker_url=https://download.docker.com/linux/static/stable/x86_64
-ARG docker_version=24.0.1
+ARG docker_version=28.5.2
 RUN curl -fsSL $docker_url/docker-$docker_version.tgz | \
         tar zxvf - --strip 1 -C /usr/bin docker/docker
 
